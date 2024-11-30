@@ -1,7 +1,7 @@
 # X Station
 
 <p align="center">
-  <img alt="X Station Logo" width="256" height="256" src="Resources/Textures/Logo/xstation_logo.png" />
+  <img alt="X Station Logo" width="256" height="256" src="xstation_logo.png" />
 </p>
 
 <div align="center">
