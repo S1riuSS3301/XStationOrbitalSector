@@ -1,53 +1,107 @@
-![image](https://github.com/EndrAnimet/DeltaV-Stray/assets/122978178/802c8d4b-da7f-4413-89a1-409e4776b032)
+# X Station
 
-Stray station - это форк англоязычного сервера [Delta-V](https://github.com/DeltaV-Station/Delta-v)
+<p align="center">
+  <img alt="X Station Logo" width="256" height="256" src="Resources/Textures/Logo/xstation_logo.png" />
+</p>
 
-<p align="center"> <img alt="Space Station 14 Delta-V Logo" width="128" height="128" src="https://raw.githubusercontent.com/DeltaV-Station/Delta-v/master/Resources/Textures/Logo/logo.png" /></p>
-<!---<p align="center"> <img alt="Space Station 14 Delta-V Banner" width="512" height="126" src="https://raw.githubusercontent.com/DeltaV-Station/Delta-v/master/Resources/Textures/Logo/banner.png" /></p>-->
+<div align="center">
+  
+[![Status](https://img.shields.io/badge/status-in%20development-yellow)](https://github.com/S1riuSS3301/XStationOrbitalSpark)
+[![Version](https://img.shields.io/badge/version-0.2-blue)](https://github.com/S1riuSS3301/XStationOrbitalSpark/releases)
+[![Created by](https://img.shields.io/badge/created%20by-Sirius-purple)](https://github.com/S1riuSS3301)
+[![Discord X Station](https://img.shields.io/discord/1234567890?color=7289DA&label=X%20Station&logo=discord&logoColor=white)](https://discord.gg/69XeTVfnzT)
+[![Discord Etharion](https://img.shields.io/discord/1234567890?color=7289DA&label=Etharion%20Team&logo=discord&logoColor=white)](https://discord.gg/w2gB8P782S)
 
-Delta-V is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), embracing a mixture of classic SS13 chaos and experimentation only possible with the new engine.
+[English](#english) | [Русский](#русский)
 
-Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
+</div>
 
-Delta-V is a continuation of the [Nyanotrasen](https://www.nyanotrasen.moe/) fork. Any work done in a non-base namespace may contain incorrect attributes due to rewrites and recommitting.
+---
 
-## Ссылки
+<a name="русский"></a>
+# 🚀 X Station [RU]
 
-#### Stray station
-[Наш Discord](https://discord.gg/jJmM4pY77m)
+X Station - это уникальный проект от команды Etharion Team, представляющий собой форк Space Station 14 с глубоким погружением в атмосферу космического фронтира. Здесь каждый найдет свое место: от простого шахтера до опытного инженера, исследуя новые горизонты мультистанционных возможностей!
 
-#### DeltaV
-[Website](https://delta-v.org/) | [Wiki](https://wiki.delta-v.org/view/Main_Page) | [Discord](https://go.delta-v.org/AtDxv)
+## ✨ Особенности проекта
 
-#### Space Station 14
+- 🌟 **Улучшенная система освещения**
+  > Полностью переработанная система света, вдохновленная Eclipse Station
 
-[Website](https://spacestation14.io/) | [Discord](https://discord.ss14.io/) | [Forum](https://forum.spacestation14.io/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
+- 🎯 **Продвинутая баллистика**
+  > Новая система обработки снарядов и баллистики
 
-## Документация
+- 🗣️ **Система TTS**
+  > Реалистичная система преобразования текста в речь
 
-На официальном сайте с [документацией](https://docs.spacestation14.io/) имеется вся необходимая информация о контенте SS14, движке, дизайне игры и многом другом. Также имеется много информации для начинающих разработчиков.
+- 🤖 **Искусственный интеллект**
+  > Интеграция GPT 3.5/4 в:
+  > - Вендинговые автоматы с личностью
+  > - Умных уборщиков (Чистоботы)
+  > - Развлекательных роботов (Хонкоботы)
+  > - Мимов-роботов
+  > - Персональных ИИ
 
-## Контрибьют
+- 🔄 **Бесконечные смены**
+  > Уникальная система непрерывной игры
 
-Мы рады принять вклад от любого человека. Заходите в Discord, если хотите помочь. У нас есть [список проблем](https://github.com/EndrAnimet/DeltaV-Stray/issues), которые нужно решить, и любой может за них взяться. Не бойтесь просить о помощи и пожалуйста, выполняйте [пожелания о PR](https://github.com/EndrAnimet/DeltaV-Stray/discussions/19)!
+- 🌍 **Мультистанционность**
+  > Взаимодействие между разными станциями
 
-Так же могут появляться todo листы в [дискуссиях](https://github.com/EndrAnimet/DeltaV-Stray/discussions).
+## 🎮 Особенности сервера
+- Medium-Hard RP
+- Система вайтлиста
+- Активное комьюнити
+- Регулярные обновления
 
-## Сборка
+## ⚠️ Правовая информация
+Данная сборка доступна исключительно для изучения в личных некоммерческих целях. Коммерческое использование разрешено только создателям, состоящим в команде Etharion Team.
 
-1. Склонируйте этот репозиторий локально
-2. Запустите `RUN_THIS.py` для инициализации подмодулей и скачивания движка.
-3. Скомпилируйте проект.
+---
 
-[Более подробная инструкция по запуску проекта.](https://docs.spacestation14.com/en/general-development/setup.html)
+<a name="english"></a>
+# 🚀 X Station [EN]
 
-## Лицензия
+X Station is a unique project by Etharion Team, representing a Space Station 14 fork with deep immersion in the space frontier atmosphere. Here, everyone will find their place: from simple miners to experienced engineers, exploring new horizons of multi-station possibilities!
 
-Код созданный в этом репозетории после commit 87c70a89a67d0521a56388e6b1c3f2cb947943e4 лицензирован под GNU Affero General Public License version 3.0, если не указано иное. Прочтите `LICENSE-AGPLv3.txt`.
-Код созданный в этом репозетории перед commit 87c70a89a67d0521a56388e6b1c3f2cb947943e4 лицензирован под MIT лицензией, если не указано иное. Прочтите `LICENSE-MIT.txt`.
+## ✨ Project Features
 
-[87c70a89a67d0521a56388e6b1c3f2cb947943e4](https://github.com/DeltaV-Station/Delta-v/commit/87c70a89a67d0521a56388e6b1c3f2cb947943e4) был загружен 17 февраля 2024 в 21:48 UTC
+- 🌟 **Enhanced Lighting System**
+  > Completely reworked lighting system, inspired by Eclipse Station
 
-Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://github.com/DeltaV-Station/Delta-v/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+- 🎯 **Advanced Ballistics**
+  > New projectile and ballistics processing system
 
-Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+- 🗣️ **TTS System**
+  > Realistic text-to-speech system
+
+- 🤖 **Artificial Intelligence**
+  > GPT 3.5/4 Integration in:
+  > - Personality-driven vending machines
+  > - Smart cleaners (Cleanbots)
+  > - Entertainment robots (Honkbots)
+  > - Mime robots
+  > - Personal AIs
+
+- 🔄 **Endless Shifts**
+  > Unique continuous gameplay system
+
+- 🌍 **Multi-Station Features**
+  > Inter-station interactions
+
+## 🎮 Server Features
+- Medium-Hard RP
+- Whitelist system
+- Active community
+- Regular updates
+
+## ⚠️ Legal Information
+This build is available exclusively for personal, non-commercial study purposes. Commercial use is permitted only for creators who are members of the Etharion Team.
+
+---
+
+<div align="center">
+
+**Powered by [Space Station 14](https://github.com/space-wizards/space-station-14) & [Robust Toolbox](https://github.com/space-wizards/RobustToolbox)**
+
+</div>
