@@ -12,7 +12,7 @@
 [![Discord X Station](https://img.shields.io/discord/1234567890?color=7289DA&label=X%20Station&logo=discord&logoColor=white)](https://discord.gg/69XeTVfnzT)
 [![Discord Etharion](https://img.shields.io/discord/1234567890?color=7289DA&label=Etharion%20Team&logo=discord&logoColor=white)](https://discord.gg/w2gB8P782S)
 
-[English](#english) | [Русский](#русский)
+[English](#english) | [Русский](#русский) | [Server Rules](Resources/ServerInfo/Gameplay.txt) | [Introduction](Resources/ServerInfo/Intro.txt)
 
 </div>
 
