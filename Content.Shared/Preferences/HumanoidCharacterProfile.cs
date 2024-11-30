@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 using Content.Shared.CCVar;
+using Content.Shared.ERP;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
@@ -95,6 +96,9 @@ namespace Content.Shared.Preferences
         [DataField]
         public Gender Gender { get; private set; } = Gender.Male;
 
+        [DataField]
+        public ERPStatus ERPStatus { get; private set; } = ERPStatus.Disabled;
+
         /// <summary>
         /// <see cref="Appearance"/>
         /// </summary>
@@ -143,11 +147,12 @@ namespace Content.Shared.Preferences
             Gender gender,
             HumanoidCharacterAppearance appearance,
             SpawnPriorityPreference spawnPriority,
-            Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities,
-            PreferenceUnavailableMode preferenceUnavailable,
-            HashSet<ProtoId<AntagPrototype>> antagPreferences,
-            HashSet<ProtoId<TraitPrototype>> traitPreferences,
-            Dictionary<string, RoleLoadout> loadouts)
+            ERPStatus erpStatus = ERPStatus.Disabled,
+            Dictionary<ProtoId<JobPrototype>, JobPriority>? jobPriorities = null,
+            PreferenceUnavailableMode preferenceUnavailable = PreferenceUnavailableMode.SpawnAsOverflow,
+            HashSet<ProtoId<AntagPrototype>>? antagPreferences = null,
+            HashSet<ProtoId<TraitPrototype>>? traitPreferences = null,
+            Dictionary<string, RoleLoadout>? loadouts = null)
         {
             Name = name;
             FlavorText = flavortext;
@@ -157,11 +162,12 @@ namespace Content.Shared.Preferences
             Gender = gender;
             Appearance = appearance;
             SpawnPriority = spawnPriority;
-            _jobPriorities = jobPriorities;
+            ERPStatus = erpStatus;
+            _jobPriorities = jobPriorities ?? new Dictionary<ProtoId<JobPrototype>, JobPriority>();
             PreferenceUnavailable = preferenceUnavailable;
-            _antagPreferences = antagPreferences;
-            _traitPreferences = traitPreferences;
-            _loadouts = loadouts;
+            _antagPreferences = antagPreferences ?? new HashSet<ProtoId<AntagPrototype>>();
+            _traitPreferences = traitPreferences ?? new HashSet<ProtoId<TraitPrototype>>();
+            _loadouts = loadouts ?? new Dictionary<string, RoleLoadout>();
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -188,6 +194,7 @@ namespace Content.Shared.Preferences
                 other.Gender,
                 other.Appearance.Clone(),
                 other.SpawnPriority,
+                other.ERPStatus,
                 new Dictionary<ProtoId<JobPrototype>, JobPriority>(other.JobPriorities),
                 other.PreferenceUnavailable,
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
@@ -301,6 +308,10 @@ namespace Content.Shared.Preferences
             return new(this) { Species = species };
         }
 
+        public HumanoidCharacterProfile WithERPStatus(ERPStatus erpStatus)
+        {
+            return new(this) { ERPStatus = erpStatus };
+        }
 
         public HumanoidCharacterProfile WithCharacterAppearance(HumanoidCharacterAppearance appearance)
         {
@@ -471,6 +482,7 @@ namespace Content.Shared.Preferences
             if (Sex != other.Sex) return false;
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
+            if (ERPStatus != other.ERPStatus) return false;
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
             if (SpawnPriority != other.SpawnPriority) return false;
             if (!_jobPriorities.SequenceEqual(other._jobPriorities)) return false;
@@ -730,6 +742,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(Appearance);
             hashCode.Add((int)SpawnPriority);
             hashCode.Add((int)PreferenceUnavailable);
+            hashCode.Add((int)ERPStatus);
             return hashCode.ToHashCode();
         }
 

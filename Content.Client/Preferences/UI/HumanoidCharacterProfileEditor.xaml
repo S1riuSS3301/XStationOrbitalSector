@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContainerButton xmlns="https://spacestation14.io"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:prefUi="clr-namespace:Content.Client.Preferences.UI"
+         x:Class="Content.Client.Preferences.UI.HumanoidCharacterProfileEditor">
+    <BoxContainer Orientation="Vertical">
+        <BoxContainer Orientation="Horizontal">
+            <Label Text="{Loc 'humanoid-profile-editor-name'}" />
+            <LineEdit Name="NameEdit" MinWidth="150" />
+        </BoxContainer>
+        
+        <BoxContainer Orientation="Horizontal">
+            <prefUi:ERPStatusControl Name="ERPStatus" />
+        </BoxContainer>
+        
+        <BoxContainer Orientation="Horizontal">
+            <Label Text="{Loc 'humanoid-profile-editor-species'}" />
+            <OptionButton Name="SpeciesButton" MinWidth="100" />
+        </BoxContainer>
+    </BoxContainer>
+</ContainerButton>

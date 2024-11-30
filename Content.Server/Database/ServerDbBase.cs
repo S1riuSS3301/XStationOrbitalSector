@@ -257,6 +257,7 @@ namespace Content.Server.Database
                     markings
                 ),
                 spawnPriority,
+                ERPStatus.Disabled,
                 jobs,
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToHashSet(),
